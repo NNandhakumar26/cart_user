@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSearchButton extends StatelessWidget {
-  const AppSearchButton({Key? key, this.onPressed}) : super(key: key);
+  const AppSearchButton({super.key, this.onPressed});
   final Function()? onPressed;
   @override
   Widget build(BuildContext context) {

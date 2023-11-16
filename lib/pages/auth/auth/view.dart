@@ -6,7 +6,7 @@ import 'package:toyskart/core/utils/loader.dart';
 import 'package:toyskart/pages/auth/auth/controller.dart';
 
 class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key}) : super(key: key);
+  const AuthPage({super.key});
 
   @override
   State<AuthPage> createState() => _AuthPageState();

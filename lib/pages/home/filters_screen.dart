@@ -10,6 +10,8 @@ import 'range_slider_view.dart';
 import 'slider_view.dart';
 
 class FiltersScreen extends StatefulWidget {
+  const FiltersScreen({super.key});
+
   @override
   _FiltersScreenState createState() => _FiltersScreenState();
 }
@@ -29,7 +31,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
       initState: (_) {},
       builder: (_) {
         return Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: Scaffold(
             backgroundColor: Colors.transparent,
             body: Column(

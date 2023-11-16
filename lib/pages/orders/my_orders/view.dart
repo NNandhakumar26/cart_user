@@ -12,7 +12,7 @@ import '../../../core/constants/colors.dart';
 import 'controller.dart';
 
 class MyOrderList extends GetView<MyOrderListController> {
-  const MyOrderList({Key? key}) : super(key: key);
+  const MyOrderList({super.key});
 
   @override
   Widget build(BuildContext context) {

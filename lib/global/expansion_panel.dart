@@ -53,7 +53,7 @@ class CustomExpansionPanelList extends StatefulWidget {
   ///
   /// The [children] and [animationDuration] arguments must not be null.
   const CustomExpansionPanelList({
-    Key? key,
+    super.key,
     this.children = const <ExpansionPanel>[],
     this.expansionCallback,
     this.animationDuration = kThemeAnimationDuration,
@@ -61,8 +61,7 @@ class CustomExpansionPanelList extends StatefulWidget {
     this.dividerColor,
     this.elevation = 2,
   })  : _allowOnlyOnePanelOpen = false,
-        initialOpenPanelValue = null,
-        super(key: key);
+        initialOpenPanelValue = null;
 
   /// Creates a radio expansion panel list widget.
   ///
@@ -78,7 +77,7 @@ class CustomExpansionPanelList extends StatefulWidget {
   /// ** See code in examples/api/lib/material/expansion_panel/expansion_panel_list.expansion_panel_list_radio.0.dart **
   /// {@end-tool}
   const CustomExpansionPanelList.radio({
-    Key? key,
+    super.key,
     this.children = const <ExpansionPanelRadio>[],
     this.expansionCallback,
     this.animationDuration = kThemeAnimationDuration,
@@ -86,8 +85,7 @@ class CustomExpansionPanelList extends StatefulWidget {
     this.expandedHeaderPadding = _kPanelHeaderExpandedDefaultPadding,
     this.dividerColor,
     this.elevation = 2,
-  })  : _allowOnlyOnePanelOpen = true,
-        super(key: key);
+  })  : _allowOnlyOnePanelOpen = true;
 
   /// The children of the expansion panel list. They are laid out in a similar
   /// fashion to [ListBody].

@@ -11,8 +11,8 @@ import '../../../../core/constants/colors.dart';
 
 class PaymentStatus extends StatefulWidget {
   const PaymentStatus({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<PaymentStatus> createState() => _PaymentStatusState();

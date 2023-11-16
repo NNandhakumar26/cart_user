@@ -8,7 +8,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:http/http.dart' as http;
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({super.key});
 
   @override
   _MainScreenState createState() => _MainScreenState();
@@ -119,6 +119,7 @@ class _MainScreenState extends State<MainScreen> {
             android: AndroidNotificationDetails(
               channel.id,
               channel.name,
+              channel.description,
               // TODO add a proper drawable resource to android, for now using
               //      one that already exists in example app.
               icon: 'launch_background',
@@ -134,6 +135,7 @@ class _MainScreenState extends State<MainScreen> {
       channel = const AndroidNotificationChannel(
         'high_importance_channel', // id
         'High Importance Notifications', // title
+        'High Importance Notifications', // description
         importance: Importance.high,
         enableVibration: true,
       );

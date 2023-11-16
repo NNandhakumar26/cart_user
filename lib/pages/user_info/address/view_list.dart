@@ -12,7 +12,7 @@ import '../../../core/constants/colors.dart';
 import 'controller.dart';
 
 class AddressList extends GetView<AddressListController> {
-  const AddressList({Key? key}) : super(key: key);
+  const AddressList({super.key});
 
   @override
   Widget build(BuildContext context) {

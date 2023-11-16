@@ -12,7 +12,6 @@ class AppTheme {
   ThemeData get light {
     return ThemeData.light().copyWith(
         primaryColor: ColorConst.primary,
-        backgroundColor: ColorConst.background,
         scaffoldBackgroundColor: ColorConst.background,
         primaryTextTheme: Theme.of(ctx).primaryTextTheme.apply(
               bodyColor: Colors.white,
@@ -84,10 +83,9 @@ class AppTheme {
         iconTheme: const IconThemeData(color: Colors.white),
         primaryIconTheme: const IconThemeData(color: Colors.white),
         inputDecorationTheme: const InputDecorationTheme(),
-        colorScheme: const ColorScheme.light(
+        checkboxTheme: const CheckboxThemeData(), colorScheme: const ColorScheme.light(
           primary: ColorConst.primary,
           onPrimary: Colors.white,
-        ),
-        checkboxTheme: const CheckboxThemeData());
+        ).copyWith(background: ColorConst.background));
   }
 }

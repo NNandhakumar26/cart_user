@@ -4,10 +4,10 @@ import 'package:http/http.dart' as http;
 
 class MultipartRequest extends http.MultipartRequest {
   MultipartRequest(
-    String method,
-    Uri url, {
+    super.method,
+    super.url, {
     this.onProgress,
-  }) : super(method, url);
+  });
 
   final void Function(int bytes, int totalBytes)? onProgress;
 

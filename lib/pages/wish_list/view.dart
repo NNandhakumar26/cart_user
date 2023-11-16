@@ -12,6 +12,8 @@ import 'package:toyskart/pages/home/toy_info_screen_wishlist.dart';
 import 'package:toyskart/pages/wish_list/controller.dart';
 
 class WishList extends StatefulWidget {
+  const WishList({super.key});
+
   @override
   _WishListState createState() => _WishListState();
 }
@@ -106,7 +108,7 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
                           FocusScope.of(context).requestFocus(FocusNode());
                         },
                         child: Container(
-                          color: Theme.of(context).backgroundColor,
+                          color: Theme.of(context).colorScheme.background,
                           child: ListView.builder(
                             itemCount: _.itemsList.length,
                             padding: const EdgeInsets.only(top: 8),
@@ -232,7 +234,7 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
               padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   borderRadius: const BorderRadius.all(
                     Radius.circular(38.0),
                   ),
@@ -286,7 +288,7 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Icon(Icons.search,
-                      size: 20, color: Theme.of(context).backgroundColor),
+                      size: 20, color: Theme.of(context).colorScheme.background),
                 ),
               ),
             ),
@@ -306,7 +308,7 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
           child: Container(
             height: 24,
             decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
+              color: Theme.of(context).colorScheme.background,
               boxShadow: <BoxShadow>[
                 BoxShadow(
                     color: Colors.grey.withOpacity(0.2),
@@ -317,7 +319,7 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
           ),
         ),
         Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: Padding(
             padding:
                 const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 4),
@@ -422,13 +424,13 @@ class _WishListState extends State<WishList> with TickerProviderStateMixin {
               blurRadius: 8.0),
         ],
       ),
-      child: SizedBox(
+      child: const SizedBox(
         //   width: AppBar().preferredSize.height + 40,
         //height: AppBar().preferredSize.height,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.end,
-          children: const <Widget>[],
+          children: <Widget>[],
         ),
       ),
     );

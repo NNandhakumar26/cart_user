@@ -8,7 +8,7 @@ import 'package:toyskart/global/style.dart';
 import 'controller.dart';
 
 class MakeDismissable extends StatelessWidget {
-  const MakeDismissable({Key? key, required this.child}) : super(key: key);
+  const MakeDismissable({super.key, required this.child});
   final Widget child;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class MakeDismissable extends StatelessWidget {
 }
 
 class BuildSheet extends StatelessWidget {
-  const BuildSheet({Key? key}) : super(key: key);
+  const BuildSheet({super.key});
   final Color secondaryGrey = const Color(0xffBBBCC5);
   // final List<GButtonModel> items;
   @override

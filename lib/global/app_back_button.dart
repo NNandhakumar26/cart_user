@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AppBackButton extends StatelessWidget {
-  const AppBackButton({Key? key, this.onPressed}) : super(key: key);
+  const AppBackButton({super.key, this.onPressed});
   final Function()? onPressed;
   @override
   Widget build(BuildContext context) {

@@ -7,12 +7,11 @@ import 'package:toyskart/pages/home/model/model.dart';
 
 class ListViewPage extends GetView<HomeController> {
   const ListViewPage(
-      {Key? key,
+      {super.key,
       this.listData,
       this.animationController,
       this.animation,
-      this.callback})
-      : super(key: key);
+      this.callback});
 
   final VoidCallback? callback;
   final ItemList? listData;
@@ -66,7 +65,7 @@ class ListViewPage extends GetView<HomeController> {
                                 ),
                               ),
                               Container(
-                                color: Theme.of(context).backgroundColor,
+                                color: Theme.of(context).colorScheme.background,
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,

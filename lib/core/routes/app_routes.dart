@@ -38,13 +38,13 @@ List<GetPage<dynamic>> appPages() {
     // ),
     GetPage(
       name: RouteConst.wishList,
-      page: () => WishList(),
+      page: () => const WishList(),
       transition: Transition.fadeIn,
       binding: BindingsBuilder.put(() => WishListController()),
     ),
     GetPage(
       name: RouteConst.home,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
       transition: Transition.fadeIn,
       binding: BindingsBuilder.put(() => HomeController()),
     ),

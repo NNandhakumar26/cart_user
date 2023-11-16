@@ -12,7 +12,7 @@ import '../../../core/constants/colors.dart';
 import 'controller.dart';
 
 class CheckOut extends GetView<CheckoutController> {
-  const CheckOut({Key? key}) : super(key: key);
+  const CheckOut({super.key});
 
   @override
   Widget build(BuildContext context) {

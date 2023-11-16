@@ -15,7 +15,6 @@ class LocalNotificationService {
 
   static void display(RemoteMessage message) async {
     try {
-      print("In Notification method");
       // int id = DateTime.now().microsecondsSinceEpoch ~/1000000;
       Random random = Random();
       int id = random.nextInt(1000);
@@ -23,10 +22,10 @@ class LocalNotificationService {
           android: AndroidNotificationDetails(
         "com.akshatharaa.toyskart",
         "firebase_push_notification",
+        'High Importance Notifications',
         importance: Importance.max,
         priority: Priority.high,
       ));
-      print("my id is ${id.toString()}");
       await _flutterLocalNotificationsPlugin.show(
         id,
         message.notification!.title,

@@ -9,7 +9,7 @@ import 'package:toyskart/pages/auth/auth/controller.dart';
 import 'package:unicons/unicons.dart';
 
 class OtpVerifyPage extends StatefulWidget {
-  const OtpVerifyPage({Key? key}) : super(key: key);
+  const OtpVerifyPage({super.key});
 
   @override
   State<OtpVerifyPage> createState() => _OtpVerifyPageState();

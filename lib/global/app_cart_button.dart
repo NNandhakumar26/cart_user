@@ -7,7 +7,7 @@ import 'package:toyskart/global/app_service.dart';
 import 'package:unicons/unicons.dart';
 
 class AppCartButton extends StatelessWidget {
-  const AppCartButton({Key? key, this.onPressed}) : super(key: key);
+  const AppCartButton({super.key, this.onPressed});
   final Function()? onPressed;
   @override
   Widget build(BuildContext context) {

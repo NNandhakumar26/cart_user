@@ -5,7 +5,7 @@ import 'package:toyskart/core/constants/routes.dart';
 import 'package:toyskart/pages/profile_settings/view.dart';
 
 class BottomNavCustom extends StatefulWidget {
-  BottomNavCustom({Key? key, this.indexValue = 0}) : super(key: key);
+  BottomNavCustom({super.key, this.indexValue = 0});
   int indexValue;
   @override
   _BottomNavCustomState createState() => _BottomNavCustomState();

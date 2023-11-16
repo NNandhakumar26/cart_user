@@ -11,8 +11,7 @@ import 'package:toyskart/pages/home/model/model.dart';
 import 'package:toyskart/pages/wish_list/controller.dart';
 
 class ToyInfoScreenWishList extends StatefulWidget {
-  const ToyInfoScreenWishList({Key? key, required this.listData})
-      : super(key: key);
+  const ToyInfoScreenWishList({super.key, required this.listData});
 
   final ItemList? listData;
 
@@ -64,7 +63,7 @@ class _ToyInfoScreenWishListState extends State<ToyInfoScreenWishList>
         (MediaQuery.of(context).size.width / 0.30) +
         24.0;
     return Container(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -156,7 +155,7 @@ class _ToyInfoScreenWishListState extends State<ToyInfoScreenWishList>
                     Container(
                       margin: const EdgeInsets.only(top: 20),
                       decoration: BoxDecoration(
-                        color: Theme.of(context).backgroundColor,
+                        color: Theme.of(context).colorScheme.background,
                         borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(32.0),
                             topRight: Radius.circular(32.0)),
@@ -248,8 +247,8 @@ class _ToyInfoScreenWishListState extends State<ToyInfoScreenWishList>
                                           color: ColorConst.primary,
                                         ),
                                       ),
-                                      Row(
-                                        children: const <Widget>[
+                                      const Row(
+                                        children: <Widget>[
                                           Text(
                                             '',
                                             textAlign: TextAlign.left,
@@ -974,7 +973,7 @@ class _ToyInfoScreenWishListState extends State<ToyInfoScreenWishList>
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           borderRadius: const BorderRadius.all(Radius.circular(16.0)),
           boxShadow: <BoxShadow>[
             BoxShadow(

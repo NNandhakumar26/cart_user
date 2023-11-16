@@ -5,7 +5,7 @@ import 'package:toyskart/global/app_back_button.dart';
 import 'package:toyskart/pages/user_info/address/controller.dart';
 
 class ModifyAddress extends GetView<AddressListController> {
-  const ModifyAddress({Key? key}) : super(key: key);
+  const ModifyAddress({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -503,8 +503,8 @@ class ModifyAddress extends GetView<AddressListController> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Wrap(
-                        children: const [
+                      child: const Wrap(
+                        children: [
                           Text(
                             "Default address",
                             style: TextStyle(

@@ -3,7 +3,7 @@ import 'package:progress_indicators/progress_indicators.dart';
 import 'package:toyskart/core/constants/colors.dart';
 
 class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {

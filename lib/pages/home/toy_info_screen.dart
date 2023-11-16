@@ -11,7 +11,7 @@ import 'package:toyskart/pages/home/controller.dart';
 import 'package:toyskart/pages/home/model/model.dart';
 
 class ToyInfoScreen extends StatefulWidget {
-  const ToyInfoScreen({Key? key, required this.listData}) : super(key: key);
+  const ToyInfoScreen({super.key, required this.listData});
 
   final ItemList? listData;
 
@@ -63,7 +63,7 @@ class _ToyInfoScreenState extends State<ToyInfoScreen>
         (MediaQuery.of(context).size.width / 0.30) +
         24.0;
     return Container(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -155,7 +155,7 @@ class _ToyInfoScreenState extends State<ToyInfoScreen>
                     Container(
                       margin: const EdgeInsets.only(top: 20),
                       decoration: BoxDecoration(
-                        color: Theme.of(context).backgroundColor,
+                        color: Theme.of(context).colorScheme.background,
                         borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(32.0),
                             topRight: Radius.circular(32.0)),
@@ -247,8 +247,8 @@ class _ToyInfoScreenState extends State<ToyInfoScreen>
                                           color: ColorConst.primary,
                                         ),
                                       ),
-                                      Row(
-                                        children: const <Widget>[
+                                      const Row(
+                                        children: <Widget>[
                                           Text(
                                             '',
                                             textAlign: TextAlign.left,
@@ -829,7 +829,7 @@ class _ToyInfoScreenState extends State<ToyInfoScreen>
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           borderRadius: const BorderRadius.all(Radius.circular(16.0)),
           boxShadow: <BoxShadow>[
             BoxShadow(

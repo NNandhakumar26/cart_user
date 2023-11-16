@@ -5,7 +5,7 @@ import 'package:toyskart/core/constants/routes.dart';
 import 'package:toyskart/core/utils/alerts.dart';
 
 class ProfileSettingsPage extends StatefulWidget {
-  const ProfileSettingsPage({Key? key}) : super(key: key);
+  const ProfileSettingsPage({super.key});
 
   @override
   State<ProfileSettingsPage> createState() => _ProfileSettingsPageState();
