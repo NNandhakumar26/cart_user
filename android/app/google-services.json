@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "726622323469",
+    "project_id": "mercurytoysuser",
+    "storage_bucket": "mercurytoysuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726622323469:android:f60f6b9ff89f45b3516644",
+        "android_client_info": {
+          "package_name": "com.mercurytoysshop.mercurytoysuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726622323469-9enk7aeq9e970igkn7c1pjh5mi3p309d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mercurytoysshop.mercurytoysuser",
+            "certificate_hash": "cbd507220fa7d63a520d82a7a1ed7b0d7b566fc2"
+          }
+        },
+        {
+          "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcZBQ00PcxhQPD_WpITeStWkDKeQXia2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726622323469:android:8f67e9c8931f452f516644",
+        "android_client_info": {
+          "package_name": "com.mercurytoysshop.toyskart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcZBQ00PcxhQPD_WpITeStWkDKeQXia2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726622323469:android:dfbee5532502d259516644",
+        "android_client_info": {
+          "package_name": "com.mercurytoysshop.toyskart_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726622323469-ked2nnah3f5f1lqoksherdfnjpl4ndog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mercurytoysshop.toyskart_admin",
+            "certificate_hash": "cbd507220fa7d63a520d82a7a1ed7b0d7b566fc2"
+          }
+        },
+        {
+          "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcZBQ00PcxhQPD_WpITeStWkDKeQXia2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726622323469-0d2l204l9sk6givhi3o3kcvgalporrbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,12 +8,13 @@ import 'package:toyskart/core/constants/colors.dart';
 import 'package:toyskart/core/constants/routes.dart';
 import 'package:toyskart/core/routes/app_routes.dart';
 import 'package:toyskart/core/theme/app_theme.dart';
+import 'package:toyskart/firebase_options.dart';
 import 'package:toyskart/global/app_service.dart';
 
 Future<void> backroundHandler(RemoteMessage message) async {
-  // print(" This is message from background");
-  // print(message.notification!.title);
-  // print(message.notification!.body);
+  print(" This is message from background");
+  print(message.notification!.title);
+  print(message.notification!.body);
 }
 
 void main() async {
@@ -24,7 +25,9 @@ void main() async {
     systemNavigationBarColor: ColorConst.primary,
   ));
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   FirebaseMessaging.onBackgroundMessage(backroundHandler);
   // FirebaseMessaging.onMessage(backroundHandler);
   // FirebaseMessaging.onMessageOpenedApp(backroundHandler);

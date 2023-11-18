@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>726622323469-9enk7aeq9e970igkn7c1pjh5mi3p309d.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDMl9lw7HU3FoBRxMTqCpvLDmRdSZT6p0o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>726622323469</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mercurytoysshop.toyskart</string>
+	<key>PROJECT_ID</key>
+	<string>mercurytoysuser</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mercurytoysuser.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:726622323469:ios:fa7a0d23c84dcb1a516644</string>
+</dict>
+</plist>

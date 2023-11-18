@@ -22,7 +22,6 @@ class LocalNotificationService {
           android: AndroidNotificationDetails(
         "com.akshatharaa.toyskart",
         "firebase_push_notification",
-        'High Importance Notifications',
         importance: Importance.max,
         priority: Priority.high,
       ));

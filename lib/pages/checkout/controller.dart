@@ -132,8 +132,8 @@ class CheckoutController extends GetxController {
 
       update();
     }
-    // Fluttertoast.showToast(
-    //     msg: "SUCCESS: ${response.paymentId!}", timeInSecForIosWeb: 4);
+    Fluttertoast.showToast(
+        msg: "SUCCESS: ${response.paymentId!}", timeInSecForIosWeb: 4);
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
